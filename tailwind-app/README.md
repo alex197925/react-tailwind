@@ -121,3 +121,30 @@ export default function App() {
 ````
 
 6. RESTART SERVER!!!!!!!!!!!!!!
+
+## Using Global Style
+
+---- index.css
+````typescript
+/*Global Style*/
+@layer base {
+    body {
+        @apply
+        font-[Poppins]
+    }
+
+    li {
+        @apply
+        p-4
+    }
+
+    h1 {
+        @apply
+        font-bold text-3xl md:text-4xl
+    }
+    h3 {
+        @apply
+        text-xl font-bold
+    }
+}
+````
