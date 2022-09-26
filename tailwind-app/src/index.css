@@ -23,7 +23,7 @@
 
     li {
         @apply
-        p-4 text-xl
+        p-4
     }
 
     h1 {
