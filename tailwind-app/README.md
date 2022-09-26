@@ -68,3 +68,56 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### Installation
+## Get started with Tailwind CSS
+[Link tailwind installation](https://tailwindcss.com/docs/guides/create-react-app)
+
+1. Install Tailwind CSS
+ * Install tailwindcss and its peer dependencies via npm, and then run the init command to generate both tailwind.config.js and postcss.config.js.
+
+````typescript
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+````
+
+2. Configure your template paths
+ * Add the paths to all of your template files in your tailwind.config.js file.
+
+````typescript
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+````
+
+3. Add the Tailwind directives to your CSS
+ * Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file.
+
+```typescript
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+4. Start using Tailwind in your project
+ * Start using Tailwind’s utility classes to style your content.
+
+````typescript
+export default function App() {
+  return (
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+  )
+}
+````
+
+6. RESTART SERVER!!!!!!!!!!!!!!
