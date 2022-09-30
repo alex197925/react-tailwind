@@ -9,7 +9,7 @@ const Destinations = () => {
     return (
         <div className="max-w-[1240px] mx-auto py-16 px-4 text-center">
             <h1>All-Inclusive Resorts</h1>
-            <p>On the Caribbean's Best Beaches</p>
+            <p className="py-4">On the Caribbean's Best Beaches</p>
         {/*    Use Grid for to place images*/}
             <div className="grid grid-rows-none md:grid-cols-5 py-4 gap-2 md: gap-4">
                 {/*This classes making images the same size*/}
