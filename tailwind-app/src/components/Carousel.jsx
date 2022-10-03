@@ -35,7 +35,7 @@ const Carousel = () => {
             {sliderData.map((image, index) =>
                 // Keep first image (using index of the image) rest opacity 0
                 <div className={index === slide ? 'opacity-100' : 'opacity-0'}>
-                    {/*Us and operator, image in the middle of the screen*/}
+                    {/*Use and operator, image in the middle of the screen*/}
                     {index === slide &&
                         <img className="w-full h-full object-cover rounded-md" src={image.url} alt="/"/>}
                 </div>)}
